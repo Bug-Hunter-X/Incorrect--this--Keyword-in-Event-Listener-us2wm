@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Incorrect way to access an element using a variable in an event listener
+    var myDiv = document.getElementById("myDiv");
+    myDiv.addEventListener("click", function() {
+      alert(this.id); // this refers to the window, not the div 
+    });
+  </script>
+</body>
+</html>
