@@ -1,0 +1,1 @@
+This repository demonstrates a subtle but common error in JavaScript within HTML that can cause unexpected behavior. The example shows how using a variable to reference an element in an event listener might lead to the incorrect 'this' context.  The solution provides the proper way to handle element references within event listeners to avoid such problems.
