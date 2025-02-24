@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    var myDiv = document.getElementById("myDiv");
+    myDiv.addEventListener("click", function(event) {
+      // Correct way: Use event.target to explicitly refer to the clicked element
+      alert(event.target.id); 
+    });
+  </script>
+</body>
+</html>
